@@ -1,0 +1,34 @@
+{
+  "name": "diamond",
+  "version": "1.0.0",
+  "description": "my education lesson",
+  "main": "main.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/straifer2008/diamond.git"
+  },
+  "author": "straifer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/straifer2008/diamond/issues"
+  },
+  "homepage": "https://github.com/straifer2008/diamond#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "grunt": "^1.0.1",
+    "jquery": "^3.2.1",
+    "owl.carousel": "^2.2.0"
+  },
+  "devDependencies": {
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-browserify": "^5.2.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
