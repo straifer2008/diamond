@@ -1,14 +1,7 @@
 .idea
 public/css
 public/js
+app/frontend/PSD
 node_modules
 vendor
-public/.editorconfig
-public/.htaccess
-public/apple-touch-icon.png
-public/browserconfig.xml
-public/crossdomain.xml
-public/favicon.ico
-public/tile.png
-public/tile-wide.png
 app/frontend/js/main.min.js
