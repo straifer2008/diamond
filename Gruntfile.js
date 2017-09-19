@@ -57,8 +57,8 @@ module.exports = function(grunt) {
         //WATCH
         watch: {
             scripts: {
-                files: ['app/frontend/js/main.js','app/frontend/less/style.less', 'app/frontend/less/variables.less', 'public/index.html'],
-                tasks: ['less', 'autoprefixer', 'cssmin', 'browserify', 'uglify'],
+                files: ['public/js/index.js', 'app/frontend/js/main.js','app/frontend/less/style.less', 'app/frontend/less/variables.less', 'public/index.css'],
+                tasks: ['less', 'autoprefixer', 'cssmin'],
                 options: {
                     interrupt: true,
                     reload: true
@@ -99,6 +99,7 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['browserSync', 'watch']);
     //My TASK COMAND
     grunt.registerTask('js', ['uglify', 'browserify']);
+    grunt.registerTask('up', ['less', 'autoprefixer', 'cssmin', 'uglify', 'browserify', 'browserSync', 'watch']);
     grunt.registerTask('css', ['less', 'autoprefixer', 'cssmin']);
 
 };
