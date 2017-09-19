@@ -8,597 +8,537 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="http://allfont.ru/allfont.css?fonts=pt-sans" rel="stylesheet" type="text/css" />
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Bitter:400,700,400italic" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
         <link rel="stylesheet" href="css/main.min.css">
-        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
-        <div id="top">
-            <div class="container_12">
-                <div class="grid_3">
-                    <div class="lang">
-                        <ul>
-                            <li class="current"><a href="#">EN</a></li>
-                            <li><a href="#">FR</a></li>
-                            <li><a href="#">GM</a></li>
-                        </ul>
-                    </div><!-- .lang -->
-
-                    <div class="currency">
-                        <ul>
-                            <li class="current"><a href="#">$</a></li>
-                            <li><a href="#">€</a></li>
-                            <li><a href="#">£</a></li>
-                        </ul>
-                    </div><!-- .currency -->
-                </div><!-- .grid_3 -->
-
-                <div class="grid_9">
-                    <nav>
-                        <a class="menu-open" href="#">Menu</a>
-                        <ul>
-                            <li class="current"><a href="#">My Account</a></li>
-                            <li><a href="#">My Wishlist</a></li>
-                            <li><a href="#">Log In</a></li>
-                            <li><a href="#">Sign Up</a></li>
-                        </ul>
-                    </nav>
-                </div><!-- .grid_9 -->
+    <section class="topper">
+        <div class="container">
+            <div class="left-wrap pull-left">
+                <ul class="language">
+                    <li class="active"><a href="#">en</a></li>
+                    <li><a href="#">fr</a></li>
+                    <li><a href="#">gm</a></li>
+                </ul>
+                <ul class="currency">
+                    <li class="active"><a href="#">$</a></li>
+                    <li><a href="#">€</a></li>
+                    <li><a href="#">£</a></li>
+                </ul>
+            </div>
+            <div class="top-click">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+            </div>
+            <div class="user-menu">
+                <div class="user-main">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+                <ul class="pull-right">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">My Wishlist</a></li>
+                    <li class="close-m"><a href="#">Log In</a></li>
+                    <li class="close-m"><a href="#">Sign Up</a></li>
+                </ul>
             </div>
         </div>
+    </section>
 
-        <!-- #top -->
-
-        <header id="branding">
-            <div class="container_12">
-                <div class="grid_3">
-                    <hgroup>
-                        <h1 id="site_logo"><a href="/" title=""><img src="img/logo.png" alt="Online Store Theme Logo"></a></h1>
-                        <h2 id="site_description">Online Store Theme</h2>
-                    </hgroup>
-                </div><!-- .grid_3 -->
-
-                <div class="grid_9">
-                    <div class="top_header">
-                        <div class="welcome">
-                            Welcome visitor you can <a href="#">login</a> or <a href="#">create an account</a>.
-                        </div><!-- .welcome -->
-
-                        <ul id="cart_nav">
-                            <li>
-                                <a class="cart_li" href="#">
-                                    <div class="cart_ico"></div>
-                                    Cart
-                                    <span>$0.00</span>
-                                </a>
-                                <ul class="cart_cont">
-                                    <li class="no_border recently">Recently added item(s)</li>
-                                    <li>
-                                        <a href="#" class="prev_cart"><div class="cart_vert"><img src="img/content/cart_img.png" alt="Product 1" title=""></div></a>
-                                        <div class="cont_cart">
-                                            <h4>Faddywax Fragrance Diffuser Set <br>Gardenia</h4>
-                                            <div class="price">1 x <span>$399.00</span></div>
-                                        </div>
-                                        <a title="close" class="close" href="#"></a>
-                                        <div class="clear"></div>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="prev_cart"><div class="cart_vert"><img src="img/content/cart_img2.png" alt="Product 2" title=""></div></a>
-                                        <div class="cont_cart">
-                                            <h4>Caldrea Linen and Room Spray</h4>
-                                            <div class="price">1 x <span>$123.00</span></div>
-                                        </div>
-                                        <a title="close" class="close" href="#"></a>
-                                        <div class="clear"></div>
-                                    </li>
-                                    <li class="no_border">
-                                        <a href="#" class="view_cart">View shopping cart</a>
-                                        <a href="#" class="checkout">Procced to Checkout</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul><!-- .cart_nav -->
-
-                        <form class="search">
-                            <input type="submit" class="search_button" value="">
-                            <input type="text" name="search" class="search_form" value="" placeholder="Search entire store here...">
-                        </form><!-- .search -->
-                    </div><!-- .top_header -->
-                </div><!-- .grid_9 -->
-
-                <div class="grid_9 primary-box">
-                    <nav class="primary">
-                        <div class="bg-menu-select"></div>
-                        <a class="menu-select" href="#">Catalog</a>
-                        <ul>
-                            <li class="curent"><a href="#">Home</a></li>
-                            <li><a href="#">Solids</a></li>
-                            <li><a href="#">Liquids</a></li>
-                            <li class="parent plus">
-                                <a href="#">Spray</a>
-                                <ul class="sub">
-                                    <li><a href="#">For home</a></li>
-                                    <li><a href="#">For Garden</a></li>
-                                    <li><a href="#">For Car</a></li>
-                                    <li><a href="#">Other spray</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Electric</a></li>
-                            <li><a href="#">For cars</a></li>
-                            <li class="parent plus">
-                                <a href="#">All pages</a>
-                                <ul class="sub">
-                                    <li><a href="/">Home</a></li>
-                                    <li><a href="#">Typography and basic styles</a></li>
-                                    <li><a href="#">Catalog (grid view)</a></li>
-                                    <li><a href="#">Catalog (list type view)</a></li>
-                                    <li><a href="#">Product view</a></li>
-                                    <li><a href="#">Shoping cart</a></li>
-                                    <li><a href="#">Proceed to checkout</a></li>
-                                    <li><a href="#">Products comparison</a></li>
-                                    <li><a href="#">Login</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                    <li><a href="#">404</a></li>
-                                    <li><a href="#">Blog posts</a></li>
-                                    <li><a href="#">Blog post view</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav><!-- .primary -->
-                </div><!-- .grid_9 -->
-            </div>
-            <div class="clear"></div>
-        </header>
-
-        <div id="slider_body">
-            <div class="anythingSlider anythingSlider-default activeSlider" style="width: 986px; height: 369px; max-height: 369.925px;"><div class="anythingWindow"><ul id="slider" class="anythingBase horizontal" style="width: 6902px; left: -1972px;"><li class="cloned panel" style="width: 986px; height: 369px;">
-                <div class="slid_content">
-                    <h2 style="color:#744747;">Precious Metals</h2>
-                    <p style="color:#744747;">There’s no gift quite like diamond jewelry. Whether
-                        you’re looking for a diamond ring, bracelet,
-                        earrings or necklace, we’ll give you tips.</p>
-                    <a class="buy_now" href="#" disabled="disabled" name="">Buy now</a>
-                </div><!-- .slid_content -->
-                <img src="img/content/slid-2.png" alt="Slid 2" title="">
-            </li><li class="cloned panel" style="width: 986px; height: 369px;">
-                <div class="slid_content">
-                    <h2 style="color:#6d5956;">Handmade jewelry</h2>
-                    <p style="color:#6d5956;">Congratulations on your engagement. As you
-                        begin to plan the many details of your wedding
-                        day, don’t forget the rings!</p>
-                    <a class="buy_now" href="#" disabled="disabled" name="">Buy now</a>
-                </div><!-- .slid_content -->
-                <img src="img/content/slid-3.png" alt="Slid 3" title="">
-            </li>
-                <li class="panel activePage" style="width: 986px; height: 369px;">
-                    <div class="slid_content">
-                        <h2 style="color: rgb(111, 86, 111); position: relative; opacity: 1; left: 296%;">Engagement Rings</h2>
-                        <p style="color: rgb(111, 86, 111); position: relative; opacity: 1; left: 296%;">The hardest part is over – you’ve found the love of
-                            your life. Now is the time to find the perfect diamond
-                            engagement ring and plan a beautiful proposal.</p>
-                        <a class="buy_now" href="#" style="position: relative; opacity: 1; left: 296%;">Buy now</a>
-                    </div><!-- .slid_content -->
-                    <img src="img/content/slid-1.png" alt="Slid 1" title="">
-                </li>
-
-                <li class="panel" style="width: 986px; height: 369px;">
-                    <div class="slid_content">
-                        <h2 style="color:#744747;">Precious Metals</h2>
-                        <p style="color:#744747;">There’s no gift quite like diamond jewelry. Whether
-                            you’re looking for a diamond ring, bracelet,
-                            earrings or necklace, we’ll give you tips.</p>
-                        <a class="buy_now" href="#">Buy now</a>
-                    </div><!-- .slid_content -->
-                    <img src="img/content/slid-2.png" alt="Slid 2" title="">
-                </li>
-
-                <li class="panel" style="width: 986px; height: 369px;">
-                    <div class="slid_content">
-                        <h2 style="color:#6d5956;">Handmade jewelry</h2>
-                        <p style="color:#6d5956;">Congratulations on your engagement. As you
-                            begin to plan the many details of your wedding
-                            day, don’t forget the rings!</p>
-                        <a class="buy_now" href="#">Buy now</a>
-                    </div><!-- .slid_content -->
-                    <img src="img/content/slid-3.png" alt="Slid 3" title="">
-                </li>
-                <li class="cloned panel" style="width: 986px; height: 369px;">
-                    <div class="slid_content">
-                        <h2 style="color:#6f566f;">Engagement Rings</h2>
-                        <p style="color:#6f566f;">The hardest part is over – you’ve found the love of
-                            your life. Now is the time to find the perfect diamond
-                            engagement ring and plan a beautiful proposal.</p>
-                        <a class="buy_now" href="#" disabled="disabled" name="">Buy now</a>
-                    </div><!-- .slid_content -->
-                    <img src="img/content/slid-1.png" alt="Slid 1" title="">
-                </li><li class="cloned panel" style="width: 986px; height: 369px;">
-                    <div class="slid_content">
-                        <h2 style="color:#744747;">Precious Metals</h2>
-                        <p style="color:#744747;">There’s no gift quite like diamond jewelry. Whether
-                            you’re looking for a diamond ring, bracelet,
-                            earrings or necklace, we’ll give you tips.</p>
-                        <a class="buy_now" href="#" disabled="disabled" name="">Buy now</a>
-                    </div><!-- .slid_content -->
-                    <img src="img/content/slid-2.png" alt="Slid 2" title="">
-                </li></ul></div><div class="anythingControls"><ul class="thumbNav"><li class="first"><a class="panel2 cur" href="#"><span>2</span></a></li><li><a class="panel3" href="#"><span>3</span></a></li><li class="last"><a class="panel4" href="#"><span>4</span></a></li></ul></div><span class="arrow back"><a href="#"><span>«</span></a></span><span class="arrow forward"><a href="#"><span>»</span></a></span></div>
-        </div>
-
-        <!-- #slider_body -->
-
-        <div id="home_banners">
-            <div class="container_12">
-                <div class="grid_6">
-                    <a href="#" class="banner banner1"><strong>Free shipping</strong> on orders over $500</a>
-                </div><!-- .grid_6 -->
-
-                <div class="grid_6">
-                    <a href="#" class="banner banner2"><strong>Insane discounts</strong> on new collection!</a>
-                </div><!-- .grid_6 -->
-                <div class="clear"></div>
-            </div>
-        </div>
-
-        <!-- #home_banners -->
-
-        <section id="main" class="home">
-            <div class="container_12">
-                <div id="content">
-                    <div class="grid_12">
-                        <h2 class="product-title">Featured Products</h2>
-                    </div><!-- .grid_12 -->
-
-                    <div class="clear"></div>
-
-                    <div class="products featured-products">
-                        <article class="grid_3 article">
-                            <img class="sale" src="img/sale.png" alt="Sale">
-                            <div class="prev">
-                                <a href="#"><img src="img/content/product1.png" alt="Product 1" title=""></a>
-                            </div><!-- .prev -->
-
-                            <h3 class="title">handmade Emerald Cut<br> Emerald Ring</h3>
-                            <div class="cart">
-                                <div class="price" style="left: 60px; text-align: center;">
-                                    <div class="vert">
-                                        $550.00
-                                        <div class="price_old">$725.00</div>
-                                    </div>
-                                </div>
-                                <a href="#" class="compare" style="left: 220px;"></a>
-                                <a href="#" class="wishlist" style="left: 244px;"></a>
-                                <a href="#" class="bay" style="transform: rotate(0deg); opacity: 0;"><img src="img/bg_cart.png" alt="Buy" title=""></a>
-                            </div><!-- .cart -->
-
-                        </article><!-- .grid_3.article -->
-
-                        <article class="grid_3 article">
-                            <div class="prev">
-                                <a href="/product_page.html"><img src="img/content/product2.png" alt="Product 2" title=""></a>
-                            </div><!-- .prev -->
-
-                            <h3 class="title">beautiful Valentine And Engagement</h3>
-                            <div class="cart">
-                                <div class="price" style="left: 60px; text-align: center;">
-                                    <div class="vert">
-                                        $550.00
-                                        <div class="price_old">$725.00</div>
-                                    </div>
-                                </div>
-                                <a href="#" class="compare" style="left: 220px;"></a>
-                                <a href="#" class="wishlist" style="left: 244px;"></a>
-                                <a href="#" class="bay" style="transform: rotate(0deg); opacity: 0;"><img src="img/bg_cart.png" alt="Buy" title=""></a>
-                            </div><!-- .cart -->
-
-                        </article><!-- .grid_3.article -->
-
-                        <article class="grid_3 article">
-                            <img class="sale" src="img/new.png" alt="New">
-                            <div class="prev">
-                                <a href="/product_page.html"><img src="img/content/product3.png" alt="Product 3" title=""></a>
-                            </div><!-- .prev -->
-
-                            <h3 class="title">Emerald Cut Emerald Ring</h3>
-                            <div class="cart">
-                                <div class="price" style="left: 60px; text-align: center;">
-                                    <div class="vert">
-                                        $550.00
-                                        <div class="price_old">$725.00</div>
-                                    </div>
-                                </div>
-                                <a href="#" class="compare" style="left: 220px;"></a>
-                                <a href="#" class="wishlist" style="left: 244px;"></a>
-                                <a href="#" class="bay" style="transform: rotate(0deg); opacity: 0;"><img src="img/bg_cart.png" alt="Buy" title=""></a>
-                            </div><!-- .cart -->
-
-                        </article><!-- .grid_3.article -->
-
-                        <article class="grid_3 article">
-                            <div class="prev">
-                                <a href="/product_page.html"><img src="img/content/product4.png" alt="Product 4" title=""></a>
-                            </div><!-- .prev -->
-
-                            <h3 class="title">Diamond Necklaces and Pendants</h3>
-                            <div class="cart">
-                                <div class="price" style="left: 60px; text-align: center;">
-                                    <div class="vert">
-                                        $550.00
-                                        <div class="price_old">$725.00</div>
-                                    </div>
-                                </div>
-                                <a href="#" class="compare" style="left: 220px;"></a>
-                                <a href="#" class="wishlist" style="left: 244px;"></a>
-                                <a href="#" class="bay" style="transform: rotate(0deg); opacity: 0;"><img src="img/bg_cart.png" alt="Buy" title=""></a>
-                            </div><!-- .cart -->
-
-                        </article><!-- .grid_3.article -->
-
-                        <article class="grid_3 article">
-                            <div class="prev">
-                                <a href="/product_page.html"><img src="img/content/product5.png" alt="Product 5" title=""></a>
-                            </div><!-- .prev -->
-
-                            <h3 class="title">Emerald Diamond Solitaire</h3>
-                            <div class="cart">
-                                <div class="price" style="left: 60px; text-align: center;">
-                                    <div class="vert">
-                                        $550.00
-                                        <div class="price_old">$725.00</div>
-                                    </div>
-                                </div>
-                                <a href="#" class="compare" style="left: 220px;"></a>
-                                <a href="#" class="wishlist" style="left: 244px;"></a>
-                                <a href="#" class="bay" style="transform: rotate(0deg); opacity: 0;"><img src="img/bg_cart.png" alt="Buy" title=""></a>
-                            </div><!-- .cart -->
-
-                        </article><!-- .grid_3.article -->
-
-                        <article class="grid_3 article">
-                            <div class="prev">
-                                <a href="/product_page.html"><img src="img/content/product6.png" alt="Product 6" title=""></a>
-                            </div><!-- .prev -->
-
-                            <h3 class="title">Diamond Necklaces and Pendants</h3>
-                            <div class="cart">
-                                <div class="price" style="left: 60px; text-align: center;">
-                                    <div class="vert">
-                                        $550.00
-                                        <div class="price_old">$725.00</div>
-                                    </div>
-                                </div>
-                                <a href="#" class="compare" style="left: 220px;"></a>
-                                <a href="#" class="wishlist" style="left: 244px;"></a>
-                                <a href="#" class="bay" style="transform: rotate(0deg); opacity: 0;"><img src="img/bg_cart.png" alt="Buy" title=""></a>
-                            </div><!-- .cart -->
-
-                        </article><!-- .grid_3.article -->
-
-                        <article class="grid_3 article">
-                            <img class="sale" src="img/top.png" alt="Top">
-                            <div class="prev">
-                                <a href="/product_page.html"><img src="img/content/product7.png" alt="Product 7" title=""></a>
-                            </div><!-- .prev -->
-
-                            <h3 class="title">Gold Pearl Bracelet</h3>
-                            <div class="cart">
-                                <div class="price" style="left: 60px; text-align: center;">
-                                    <div class="vert">
-                                        $550.00
-                                        <div class="price_old">$725.00</div>
-                                    </div>
-                                </div>
-                                <a href="#" class="compare" style="left: 220px;"></a>
-                                <a href="#" class="wishlist" style="left: 244px;"></a>
-                                <a href="#" class="bay" style="transform: rotate(0deg); opacity: 0;"><img src="img/bg_cart.png" alt="Buy" title=""></a>
-                            </div><!-- .cart -->
-
-                        </article><!-- .grid_3.article -->
-
-                        <article class="grid_3 article">
-                            <div class="prev">
-                                <a href="/product_page.html"><img src="img/content/product8.png" alt="Product 8" title=""></a>
-                            </div><!-- .prev -->
-
-                            <h3 class="title">beautiful Valentine And Engagement</h3>
-                            <div class="cart">
-                                <div class="price" style="left: 60px; text-align: center;">
-                                    <div class="vert">
-                                        $550.00
-                                        <div class="price_old">$725.00</div>
-                                    </div>
-                                </div>
-                                <a href="#" class="compare" style="left: 220px;"></a>
-                                <a href="#" class="wishlist" style="left: 244px;"></a>
-                                <a href="#" class="bay" style="transform: rotate(0deg); opacity: 0;"><img src="img/bg_cart.png" alt="Buy" title=""></a>
-                            </div><!-- .cart -->
-
-                        </article><!-- .grid_3.article -->
-
-                        <div class="clear"></div>
-                    </div><!-- .products -->
-                    <div class="clear"></div>
-                </div><!-- #content -->
-
-                <div class="clear"></div>
-
-                <div id="brands" class="grid_12">
-                    <div class="c_header">
-                        <div class="grid_10">
-                            <h2>Shop by brands</h2>
-                        </div><!-- .grid_10 -->
-
-                        <div class="grid_2">
-                            <a id="next_c1" class="next arows" href="#" style="display: block;"><span>Next</span></a>
-                            <a id="prev_c1" class="prev arows" href="#" style="display: block;"><span>Prev</span></a>
-                        </div><!-- .grid_2 -->
-                    </div><!-- .c_header -->
-
-                    <div class="brands_list">
-                        <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 984px; height: 102px; margin: 0px 0px 20px; overflow: hidden; cursor: move;"><ul id="listing" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 3280px; height: 102px;">
-                            <li>
-                                <a href="#"><div><img src="img/content/brand1.png" alt="Brand 1" title=""></div></a>
-                            </li>
-                            <li>
-                                <a href="#"><div><img src="img/content/brand2.png" alt="Brand 2" title=""></div></a>
-                            </li>
-                            <li>
-                                <a href="#"><div><img src="img/content/brand3.png" alt="Brand 3" title=""></div></a>
-                            </li>
-                            <li>
-                                <a href="#"><div><img src="img/content/brand4.png" alt="Brand 4" title=""></div></a>
-                            </li>
-                            <li>
-                                <a href="#"><div><img src="img/content/brand5.png" alt="Brand 5" title=""></div></a>
-                            </li>
-                            <li>
-                                <a href="#"><div><img src="img/content/brand6.png" alt="Brand 6" title=""></div></a>
-                            </li>
-                            <li>
-                                <a href="#"><div><img src="img/content/brand7.png" alt="Brand 7" title=""></div></a>
-                            </li>
-                        </ul></div>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3 col-sm-3">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/logo.png" alt="Logo">
+                            <span>online store theme</span>
+                        </a>
                     </div>
                 </div>
-
-                <div class="clear"></div>
-
-                <div id="content_bottom">
-                    <div class="grid_6">
-                        <div class="bottom_block about_as">
-                            <h3>About Us</h3>
-                            <div class="about_as_content">
-                                <p>Lorem ipsum, libero et luctus molestie, turpis mi sagittis nisl, a scelerisque leo nulla et lectus pendisse dictum posuere elit, in congue nisl varius lentesque a tellus eget quam varius aliquet.</p>
-                                <p>Pellentesque tristique, libero et luctus molestie, turpis a scelerisque leo nulla et lectus pendisse dictum posuere elit. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                                <p>In congue nisl varius quis lentesque a tellus eget quam varius aliquet. Vel lobortis gravida.  Many desktop publishing packages and web page .</p>
+                <div class="col-xs-9 col-sm-9">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <div class="visitor">
+                                <p>Welcome visitor you can <a href="#">login</a> or <a href="#">create an account</a>.</p>
                             </div>
-                        </div><!-- .about_as -->
-                    </div><!-- .grid_6 -->
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="carts">
+                                <div class="cart">
+                                    <a href="#">
+                                        <div class="icon-cart"></div>
+                                        cart
+                                        <span>$0.00</span>
+                                    </a>
+                                    <ul>
+                                        <h6>Recently added item(s)</h6>
+                                        <li class="clearfix none-border">
+                                            <a class="pull-left" href="#">
+                                                <img src="img/cart-img-1.png" alt="#">
+                                            </a>
+                                            <div class="description pull-left">
+                                                <a href="#">Faddywax Fragrance Diffuser Set Gardenia</a>
+                                                <span class="price">1 x <b>$399.00</b></span>
+                                            </div>
+                                            <a href="#" class="remove"></a>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="pull-left" href="#">
+                                                <img src="img/cart-img-2.png" alt="#">
+                                            </a>
+                                            <div class="description pull-left">
+                                                <a href="#">Caldrea Linen and Room Spray</a>
+                                                <span class="price">1 x <b>$123.00</b></span>
+                                            </div>
+                                            <a href="#" class="remove"></a>
+                                        </li>
+                                        <a class="button" href="#">View shoping cart</a>
+                                        <a class="button red-button pull-right" href="#">Proceed to Checout</a>
+                                    </ul>
+                                </div>
+                                <div class="search clearfix">
+                                    <form method="get" class="clearfix" action="index.html">
+                                        <input type="text" class="form-control" placeholder="Search entire store here...">
+                                        <input type="submit" name="submit" value="">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9">
+                    <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span>catalog</span>
+                        </div>
 
-                    <div class="grid_6">
-                        <div class="bottom_block news">
-                            <h3>News</h3>
-                            <ul>
-                                <li>
-                                    <time datetime="2012-03-03">3 january 2012</time>
-                                    <a href="#">Fermentum parturient lacus tristique habitant nullam morbi et odio nibh mus dictum tellus erat.</a>
-                                </li>
-
-                                <li>
-                                    <time datetime="2012-02-03">2 january 2012</time>
-                                    <a href="#">Cras ac hendrerit dui. Duis lacus ligula, luctus ac tristique eget, posuere id erat. Many desktop publishing packages and web page editors now use.</a>
-                                </li>
-
-                                <li>
-                                    <time datetime="2012-01-03">1 january 2012</time>
-                                    <a href="#">Lorem ipsum, libero et luctus molestie, turpis mi sagittis nisl, a scelerisque leo nulla et lectus.</a>
-                                </li>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="current"><a href="#">home</a></li>
+                                <li><a href="#">weeding</a></li>
+                                <li><a href="#">rings</a></li>
+                                <li><a href="#">NECKLACES</a></li>
+                                <li><a href="#">EARRINGS</a></li>
+                                <li><a href="#">BRACELETS</a></li>
                             </ul>
-                        </div><!-- .news -->
-                    </div><!-- .grid_6 -->
-                    <div class="clear"></div>
-                </div><!-- #content_bottom -->
-            </div><!-- .container_12 -->
+                        </div><!-- /.navbar-collapse -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="top-slider">
+            <div class="owl-carousel carusel-top">
+                <div class="slide-item">
+                    <img src="img/slide-1.png" alt="#">
+                    <div class="slide-description">
+                        <h2>Engagement Rings</h2>
+                        <p class="hidden-xs">The hardest part is over – you’ve found the love of your life. Now is the time to find the perfect diamond engagement ring and plan a beautiful proposal.</p>
+                        <a href="#" class="button gradient">buy now</a>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <img src="img/slide-2.png" alt="#">
+                    <div class="slide-description">
+                        <h2>Engagement Rings</h2>
+                        <p class="hidden-xs">The hardest part is over – you’ve found the love of your life. Now is the time to find the perfect diamond engagement ring and plan a beautiful proposal.</p>
+                        <a href="#" class="button red-button hidden-xs">buy now</a>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <img src="img/slide-3.png" alt="#">
+                    <div class="slide-description">
+                        <h2>Engagement Rings</h2>
+                        <p class="hidden-xs">The hardest part is over – you’ve found the love of your life. Now is the time to find the perfect diamond engagement ring and plan a beautiful proposal.</p>
+                        <a href="#" class="button red-button hidden-xs">buy now</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- #main.home -->
+        <section class="baners">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 xol-sm-6">
+                        <div class="baner"><a href="#">
+                            <img src="img/banner-img.png" alt="">
+                            <h5><b>Free shipping</b> on orders over 1500</h5>
+                        </a></div>
+                    </div>
+                    <div class="col-xs-6 xol-sm-6">
+                        <div class="baner"><a href="#">
+                            <img src="img/banner-img-2.png" alt="">
+                            <h5><b>Insane discounts</b> on new collection!</h5>
+                        </a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <footer>
-            <div class="footer_navigation">
-                <div class="container_12">
-                    <div class="grid_3">
-                        <h3>Contact Us</h3>
-                        <ul class="f_contact">
-                            <li>49 Archdale, 2B Charlestone</li>
-                            <li>+777 (100) 1234</li>
-                            <li>mail@example.com</li>
-                        </ul><!-- .f_contact -->
-                    </div><!-- .grid_3 -->
+        <section class="featured-products">
+            <div class="container">
+                <h4 class="title">Featured Products</h4>
+                <ul class="featured-items">
+                    <li>
+                        <div class="featured-item">
+                            <a href="#">
+                                <img src="img/sale.png" alt="sale" class="marcer-product">
+                                <img src="img/feature-1.png" alt="1">
+                                <h5 class="featured-product-title">handmade Emerald Cut Emerald Ring</h5>
+                            </a>
+                            <div class="featured-prise">
+                                <div class="prise">
+                                    <div class="primery-prise">$1,550.00</div>
+                                    <div class="sale-prise">$1,725.00</div>
+                                </div>
+                                <div class="prise-buttons">
+                                    <a href="#" class="by"></a>
+                                    <a href="#" class="like"></a>
+                                    <a href="#" class="share"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="featured-item">
+                            <a href="#">
+                                <img src="img/feature-2.png" alt="1">
+                                <h5 class="featured-product-title">beautiful Valentine And Engagement</h5>
+                            </a>
+                            <div class="featured-prise">
+                                <div class="prise">
+                                    <div class="primery-prise">$1,199.00</div>
+                                </div>
+                                <div class="prise-buttons">
+                                    <a href="#" class="by"></a>
+                                    <a href="#" class="like"></a>
+                                    <a href="#" class="share"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="featured-item">
+                            <a href="#">
+                                <img src="img/new.png" alt="new" class="marcer-product">
+                                <img src="img/feature-3.png" alt="1">
+                                <h5 class="featured-product-title">Emerald Cut Emerald Ring</h5>
+                            </a>
+                            <div class="featured-prise">
+                                <div class="prise">
+                                    <div class="primery-prise">$1,799.00</div>
+                                </div>
+                                <div class="prise-buttons">
+                                    <a href="#" class="by"></a>
+                                    <a href="#" class="like"></a>
+                                    <a href="#" class="share"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="featured-item">
+                            <a href="#">
+                                <img src="img/feature-4.png" alt="1">
+                                <h5 class="featured-product-title">Diamond Necklaces and Pendants</h5>
+                            </a>
+                            <div class="featured-prise">
+                                <div class="prise">
+                                    <div class="primery-prise">$1,500.00</div>
+                                </div>
+                                <div class="prise-buttons">
+                                    <a href="#" class="by"></a>
+                                    <a href="#" class="like"></a>
+                                    <a href="#" class="share"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="featured-item">
+                            <a href="#">
+                                <img src="img/feature-5.png" alt="1">
+                                <h5 class="featured-product-title">Emerald Diamond Solitaire</h5>
+                            </a>
+                            <div class="featured-prise">
+                                <div class="prise">
+                                    <div class="primery-prise">$3,099.00</div>
+                                </div>
+                                <div class="prise-buttons">
+                                    <a href="#" class="by"></a>
+                                    <a href="#" class="like"></a>
+                                    <a href="#" class="share"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="featured-item">
+                            <a href="#">
+                                <img src="img/top.png" alt="top" class="marcer-product">
+                                <img src="img/feature-6.png" alt="1">
+                                <h5 class="featured-product-title">Diamond Necklaces and Pendants</h5>
+                            </a>
+                            <div class="featured-prise">
+                                <div class="prise">
+                                    <div class="primery-prise">$7,900.00</div>
+                                </div>
+                                <div class="prise-buttons">
+                                    <a href="#" class="by"></a>
+                                    <a href="#" class="like"></a>
+                                    <a href="#" class="share"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="featured-item">
+                            <a href="#">
+                                <img src="img/feature-7.png" alt="1">
+                                <h5 class="featured-product-title">Gold Pearl Bracelet</h5>
+                            </a>
+                            <div class="featured-prise">
+                                <div class="prise">
+                                    <div class="primery-prise">$399.00</div>
+                                </div>
+                                <div class="prise-buttons">
+                                    <a href="#" class="by"></a>
+                                    <a href="#" class="like"></a>
+                                    <a href="#" class="share"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="featured-item">
+                            <a href="#">
+                                <img src="img/feature-8.png" alt="1">
+                                <h5 class="featured-product-title">beautiful Valentine And Engagement</h5>
+                            </a>
+                            <div class="featured-prise">
+                                <div class="prise">
+                                    <div class="primery-prise">$1,050.00</div>
+                                </div>
+                                <div class="prise-buttons">
+                                    <a href="#" class="by"></a>
+                                    <a href="#" class="like"></a>
+                                    <a href="#" class="share"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-                    <div class="grid_3">
-                        <h3>Information</h3>
-                        <nav class="f_menu">
+        <section class="brands">
+            <div class="container">
+                <h4 class="title">shop by brands</h4>
+                <div class="owl-carousel carusel-brands">
+                    <div class="brand-boll">
+                        <a href="#">
+                            <div class="boll">1</div>
+                        </a>
+                    </div>
+                    <div class="brand-boll">
+                        <a href="#">
+                            <div class="boll">2</div>
+                        </a>
+                    </div>
+                    <div class="brand-boll">
+                        <a href="#">
+                            <div class="boll">3</div>
+                        </a>
+                    </div>
+                    <div class="brand-boll">
+                        <a href="#">
+                            <div class="boll">4</div>
+                        </a>
+                    </div>
+                    <div class="brand-boll">
+                        <a href="#">
+                            <div class="boll">5</div>
+                        </a>
+                    </div>
+                    <div class="brand-boll">
+                        <a href="#">
+                            <div class="boll">6</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="about info-blocks">
+                            <h6 class="info-title">About Us</h6>
+                            <p>Lorem ipsum, libero et luctus molestie, turpis mi sagittis nisl, a scelerisque leo nulla et lectus pendisse dictum posuere elit, in congue nisl varius lentesque a tellus eget quam varius aliquet.</p>
+                            <p>Pellentesque tristique, libero et luctus molestie, turpis a scelerisque leo nulla et lectus pendisse dictum posuere elit. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            <p>In congue nisl varius quis lentesque a tellus eget quam varius aliquet. Vel lobortis gravida. Many desktop publishing packages and web page .</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="news info-blocks">
+                            <h6 class="info-title">News</h6>
+                            <ul>
+                                <li class="clearfix">
+                                    <p class="date">3 january 2012</p>
+                                    <a href="#">Fermentum parturient lacus tristique habitant nullam morbi et odio nibh
+                                        mus dictum tellus erat.</a></li>
+                                <li class="clearfix">
+                                    <p class="date">2 january 2012</p>
+                                    <a href="#">Cras ac hendrerit dui. Duis lacus ligula, luctus ac tristique eget, posuere id erat. Many desktop publishing packages and web page editors now use.</a></li>
+                                <li class="clearfix">
+                                    <p class="date">1 january 2012</p>
+                                    <a href="#">Lorem ipsum, libero et luctus molestie, turpis mi sagittis nisl, a scelerisque leo nulla et lectus.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="contacts">
+                            <h5>contact us</h5>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <span>49 Archdale, 2B Charleston</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <span>+777 (100) 1234</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                        <span>mail@example.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="information">
+                            <h5>Information</h5>
                             <ul>
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
                                 <li><a href="#">Terms &amp; Conditions</a></li>
                                 <li><a href="#">Secure payment</a></li>
                             </ul>
-                        </nav><!-- .private -->
-                    </div><!-- .grid_3 -->
-
-                    <div class="grid_3">
-                        <h3>Customer Service</h3>
-                        <nav class="f_menu">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="servise">
+                            <h5>Costumer Service</h5>
                             <ul>
                                 <li><a href="#">Contact Us</a></li>
                                 <li><a href="#">Return</a></li>
                                 <li><a href="#">FAQ</a></li>
                                 <li><a href="#">Site Map</a></li>
                             </ul>
-                        </nav><!-- .private -->
-                    </div><!-- .grid_3 -->
-
-                    <div class="grid_3">
-                        <h3>My Account</h3>
-                        <nav class="f_menu">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="account">
+                            <h5>My Account</h5>
                             <ul>
                                 <li><a href="#">My Account</a></li>
                                 <li><a href="#">Order History</a></li>
                                 <li><a href="#">Wish List</a></li>
                                 <li><a href="#">Newsletter</a></li>
                             </ul>
-                        </nav><!-- .private -->
-                    </div><!-- .grid_3 -->
-                </div><!-- .container_12 -->
-                <div class="clear"></div>
-                <div class="newsletter-payments">
-                    <div class="container_12">
-                        <div class="grid_12">
-                            <div class="bg-newsletter-payments">
-                                <div class="newsletter">
-                                    <div class="newsletter-text">
-                                        <div class="icon-mail">Newsletter</div>
-                                        Subscribe to notifications about discounts from our store
-                                    </div>
-                                    <form>
-                                        <input type="submit" value="">
-                                        <input type="email" name="newsletter" value="" placeholder="Enter your email address...">
-                                    </form>
-                                </div><!-- .newsletter -->
-
-                                <div class="payments">
-                                    <img src="img/payments.png" alt="Payments">
-                                </div><!-- .payments -->
-                            </div><!-- .bg-newsletter-payments -->
                         </div>
-                        <div class="clear"></div>
-                    </div><!-- .container_12 -->
-                </div><!-- .newsletter-payments -->
-                <div class="clear"></div>
-            </div><!-- .footer_navigation -->
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <div class="newsletter-wrapper">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-9 col-md-9">
+                                <div class="item">
+                                    <div class="letter">Newsletter</div>
+                                    <form action="index.html">
+                                        <span>Subscribe to notifications about discounts from our store</span>
+                                        <div class="form-group">
+                                            <input class="let-email" type="text" placeholder="Enter your email address...">
+                                            <input class="let-butt" type="submit" value="">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-3">
+                                <div class="payments">
+                                    <ul>
+                                        <li class="visa"><a href="#"></a></li>
+                                        <li class="paypal"><a href="#"></a></li>
+                                        <li class="msc"><a href="#"></a></li>
+                                        <li class="westun"><a href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xs-6">
+                        <div class="copy">
+                            © Diamond Store Theme, 2013
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                        <div class="socials clearfix">
+                            <ul class="list-inline-styles clearfix">
+                                <li class="facebook">
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="twitter">
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="google-pl">
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-            <div class="footer_info">
-                <div class="container_12">
-                    <div class="grid_6">
-                        <p class="copyright">© Diamond Store Theme, 2013</p>
-                    </div><!-- .grid_6 -->
+       <!-- <script src="js/main.min.js"></script>-->
+         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-                    <div class="grid_6">
-                        <div class="soc">
-                            <a class="google" href="#"></a>
-                            <a class="twitter" href="#"></a>
-                            <a class="facebook" href="#"></a>
-                        </div><!-- .soc -->
-                    </div><!-- .grid_6 -->
-
-                    <div class="clear"></div>
-                </div><!-- .container_12 -->
-            </div><!-- .footer_info -->
-        </footer>
-
-        <script src="js/main.min.js"></script>
+         <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+         <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+         <!--<script src="js/main.min.js"></script>-->
+         <script src="js/index.js"></script>
     </body>
 </html>
