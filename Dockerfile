@@ -5,9 +5,5 @@ ADD /. /diamond
 RUN apt-get update
 RUN apt-get install -y nodejs
 RUN apt-get install -y npm
-<<<<<<< HEAD
-EXPOSE 3001
-=======
 
 EXPOSE 3000
->>>>>>> dev
