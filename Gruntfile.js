@@ -64,7 +64,7 @@ module.exports = function(grunt) {
         //WATCH
         watch: {
             scripts: {
-                files: ['public/js/index.js', 'app/frontend/js/main.js','app/frontend/less/style.less', 'app/frontend/less/variables.less', 'public/index.css'],
+                files: ['public/js/index.js', 'app/frontend/js/main.js','app/frontend/less/style.less', 'app/frontend/less/variables.less', 'public/*.css'],
                 tasks: ['less', 'autoprefixer', 'cssmin'],
                 options: {
                     interrupt: true,
