@@ -43,17 +43,24 @@ module.exports = function(grunt) {
 
         //JS files
 
+        concat: {
+            options: {
+                separator: ';'
+            },
+            dist: {
+                src: ['node_modules/jquery/dist/jquery.js', 'node_modules/bootstrap/dist/js/bootstrap.js', 'node_modules/owl.carousel/dist/owl.carousel.js', 'app/frontend/js/index.js'],
+                dest: 'app/frontend/js/main.js'
+            }
+        },
+
         uglify: {
             target: {
                 files: {
-                    'app/frontend/js/main.min.js': 'app/frontend/js/main.js'
+                    'public/js/main.min.js': 'app/frontend/js/main.js'
                 }
             }
         },
 
-        browserify: {
-            'public/js/main.min.js': ['app/frontend/js/main.min.js']
-        },
         //WATCH
         watch: {
             scripts: {
@@ -88,18 +95,17 @@ module.exports = function(grunt) {
     //Loadtasks - START
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
     //Loadtasks - END
 
     //DEFAULT TASK COMAND
     grunt.registerTask('default', ['browserSync', 'watch']);
-    //My TASK COMAND
-    grunt.registerTask('js', ['uglify', 'browserify']);
-    grunt.registerTask('up', ['less', 'autoprefixer', 'cssmin', 'uglify', 'browserify', 'browserSync', 'watch']);
+    grunt.registerTask('up', ['less', 'autoprefixer', 'cssmin', 'concat', 'uglify','browserSync', 'watch']);
+    grunt.registerTask('js', ['concat', 'uglify']);
     grunt.registerTask('css', ['less', 'autoprefixer', 'cssmin']);
 
 };
