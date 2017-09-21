@@ -1,9 +1,13 @@
-FROM ubuntu
-MAINTAINER Artem <straifer2008@mail.ru>
-WORKDIR /diamond/public
-ADD /. /diamond
-RUN apt-get update
-RUN apt-get install -y nodejs
-RUN apt-get install -y npm
+FROM ubuntu:16.04
+MAINTAINER straifer2008@gmail.com
 
-EXPOSE 3000
+
+ENV DEBIAN_FRONTEND noninteractive
+RUN apt-get update && apt-get install -y nginx
+ADD Docker/nginx.conf /etc/nginx/
+COPY public /www
+EXPOSE 80
+
+VOLUME /www
+
+CMD /usr/sbin/nginx
